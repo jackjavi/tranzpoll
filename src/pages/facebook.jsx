@@ -2,11 +2,10 @@ import React from "react";
 
 const facebook = () => {
   return (
-    <div className="bg-[#f0f2f5] h-[100vh]  w-full font-[Heveltica] ">
+    <div className="bg-[#f0f2f5] h-screen  w-full font-[Heveltica] ">
       <div className="flex justify-center  h-full flex-col md:flex-row md:gap-[5vw] md:items-center md:justify-center items-center mx-[16px] ">
-        <div></div>
         <div className="w-75vw]  md:w-[45vw] md:mt--12 flex flex-col  items-center  md:items-start">
-          <h2 className=" text-[#1877f2] text-[34px]  md:text-[70px] font-black py-2 text-[50px]">
+          <h2 className=" text-[#1877f2] text-[27px]  md:text-[70px] font-bold md:font-black py-0 text-[50px]">
             facebook
           </h2>
 
