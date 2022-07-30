@@ -4,7 +4,7 @@ const facebook = () => {
   return (
     <div className="bg-[#f0f2f5] h-screen  w-full font-[Heveltica] ">
       <div className="flex justify-center  h-full flex-col md:flex-row md:gap-[5vw] md:items-center md:justify-center items-center mx-[16px] ">
-        <div className="w-75vw]  md:w-[45vw] md:mt--12 flex flex-col  items-center  md:items-start">
+        <div className="w-90vw]  md:w-[45vw] md:mt--12 flex flex-col  items-center  md:items-start">
           <h2 className=" text-[#1877f2] text-[27px]  md:text-[70px] font-bold md:font-black py-0 text-[50px]">
             facebook
           </h2>
@@ -14,7 +14,7 @@ const facebook = () => {
           </p>
         </div>
 
-        <div className="shadow-xl my-8 w-[75vw] bg-white p-4 rounded-lg md:w-[35vw] md:mb-20 flex flex-col gap-3 justify-center items-center">
+        <div className="shadow-xl my-8 w-[90vw] bg-white p-4 rounded-lg md:w-[35vw] md:mb-20 flex flex-col gap-3 justify-center items-center">
           <input
             className="shadow outline-1 w-full font-[Helvetica] p-3 text-[14px] bg-[f5f6f7]  border rounded"
             type="text"
@@ -42,7 +42,7 @@ const facebook = () => {
             Create New Account
           </div>
         </div>
-        <p className="md:hidden text-[#666] font-[11px] md:font-[14px] w-[65%]">
+        <p className="md:hidden text-[#666] font-[11px] md:font-[14px] w-[75%]">
           <span className=" text-[#1c1e21] font-semibold">Create a Page </span>
           for a celebrity, brand or business
         </p>
