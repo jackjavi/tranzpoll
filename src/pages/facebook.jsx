@@ -2,7 +2,7 @@ import React from "react";
 
 const facebook = () => {
   return (
-    <div className="bg-[#f0f2f5] h-[100vh]  w-full font-[Heveltica] py-20">
+    <div className="bg-[#f0f2f5] h-[100vh]  w-full font-[Heveltica] ">
       <div className="flex justify-center  h-full flex-col md:flex-row md:gap-[5vw] md:items-center md:justify-center items-center mx-[16px] ">
         <div></div>
         <div className="w-75vw]  md:w-[45vw] md:mt--12 flex flex-col  items-center  md:items-start">
