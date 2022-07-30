@@ -41,12 +41,13 @@ const facebook = () => {
           <div className=" cursor-pointer text-white bg-[#42b72a] p-3 rounded-md text-[17px] font-bold">
             Create New Account
           </div>
-
-          <p className="text-[#666] font-[14px]">
-            <span className="text-[#1c1e21] font-semibold">Create a Page </span>
-            for a celebrity, brand or business
-          </p>
         </div>
+        <p className="text-[#666] font-[14px]">
+          <span className="text-[#1c1e21] font-semibold pb-20">
+            Create a Page{" "}
+          </span>
+          for a celebrity, brand or business
+        </p>
       </div>
     </div>
   );
