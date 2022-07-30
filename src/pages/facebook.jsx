@@ -42,7 +42,7 @@ const facebook = () => {
             Create New Account
           </div>
         </div>
-        <p className="md:hidden text-[#666] font-[14px]">
+        <p className="md:hidden text-[#666] font-[11px] md:font-[14px] w-[65%]">
           <span className=" text-[#1c1e21] font-semibold">Create a Page </span>
           for a celebrity, brand or business
         </p>
