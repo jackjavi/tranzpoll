@@ -14,7 +14,7 @@ const facebook = () => {
           </p>
         </div>
 
-        <div className="shadow-xl my-8 w-[90vw] bg-white p-4 rounded-lg md:w-[35vw] md:mb-20 flex flex-col gap-3 justify-center items-center">
+        <div className="shadow-xl my-8 w-[90vw] bg-white p-6 rounded-lg md:w-[35vw] md:mb-20 flex flex-col gap-3 justify-center items-center">
           <input
             className="shadow outline-1 w-full font-[Helvetica] p-3 text-[14px] bg-[f5f6f7]  border rounded"
             type="text"
