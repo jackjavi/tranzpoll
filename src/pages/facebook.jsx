@@ -6,11 +6,11 @@ const facebook = () => {
       <div className="flex justify-center  h-full flex-col md:flex-row md:gap-[5vw] md:items-center md:justify-center items-center mx-[16px] ">
         <div></div>
         <div className="w-75vw]  md:w-[45vw] md:mt--12 flex flex-col  items-center  md:items-start">
-          <h2 className=" text-[#1877f2] text-xl  md:text-[70px] font-black py-6 text-[50px]">
+          <h2 className=" text-[#1877f2] text-[34px]  md:text-[70px] font-black py-2 text-[50px]">
             facebook
           </h2>
 
-          <p className="text-[24px] md:text-xl w-[65%] md:w-[72%] md:text-[30px] md:mb-20">
+          <p className="text-[16px] md:text-xl w-[65%] md:w-[72%] md:text-[30px] md:mb-20">
             Facebook helps you connect and share with the people in your life.
           </p>
         </div>
