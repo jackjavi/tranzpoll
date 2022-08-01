@@ -68,6 +68,13 @@ const survey = () => {
           None of the Above
         </label>
       </div>
+
+      <button
+        cursor-pointer
+        className="bg-[#1877f2] py-3 rounded-md mt-6 text-xl font-bold w-[50%] text-white text-[17px] px-[16px]"
+      >
+        Next
+      </button>
     </div>
   );
 };
