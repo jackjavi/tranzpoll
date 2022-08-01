@@ -36,6 +36,38 @@ const survey = () => {
           TikTok
         </label>
       </div>
+
+      <div className="bg-white p-4 rounded-lg w-[75vw] mt-2">
+        <p className="text-black">What do you mostly use social media for?</p>
+
+        <input
+          type="radio"
+          value="entertainment"
+          id="entertainment"
+          name="entertainment"
+        />
+        <label htmlFor="entertainment" className="pl-2 text-[#84848C]">
+          Entertainment
+        </label>
+        <br />
+
+        <input type="radio" value="education" id="education" name="education" />
+        <label htmlFor="education" className="pl-2 text-[#84848C]">
+          Education
+        </label>
+        <br />
+
+        <input type="radio" value="business" id="business" name="business" />
+        <label htmlFor="business" className="pl-2 text-[#84848C]">
+          Business
+        </label>
+        <br />
+
+        <input type="radio" value="none" id="tiktok" name="none" />
+        <label htmlFor="none" className="pl-2 text-[#84848C]">
+          None of the Above
+        </label>
+      </div>
     </div>
   );
 };
