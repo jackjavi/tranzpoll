@@ -1,9 +1,9 @@
-import Survey from "./pages/Survey";
+import Survey4 from "./pages/Survey4";
 
 function App() {
   return (
     <div>
-      <Survey />
+      <Survey4 />
     </div>
   );
 }
