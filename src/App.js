@@ -1,9 +1,9 @@
-import Facebook from "./pages/facebook";
+import Survey from "./pages/Survey";
 
 function App() {
   return (
-    <div className="App">
-      <Facebook />
+    <div>
+      <Survey />
     </div>
   );
 }
