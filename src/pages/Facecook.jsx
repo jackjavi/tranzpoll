@@ -1,6 +1,6 @@
 import React from "react";
 
-const facebook = () => {
+const Facecook = () => {
   return (
     <div className="bg-[#f0f2f5] h-screen  w-full font-[Heveltica] ">
       <div className="flex justify-center  h-full flex-col md:flex-row md:gap-[5vw] md:items-center md:justify-center items-center mx-[16px] ">
@@ -51,4 +51,4 @@ const facebook = () => {
   );
 };
 
-export default facebook;
+export default Facecook;

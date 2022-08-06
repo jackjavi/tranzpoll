@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const survey = () => {
   return (
@@ -79,12 +80,14 @@ const survey = () => {
         </label>
       </div>
 
-      <button
-        cursor-pointer
-        className="bg-[#1877f2] py-3 rounded-md mt-6 text-xl font-bold w-[50%] text-white text-[17px] px-[16px]"
-      >
-        Next
-      </button>
+      <Link to="/survey4">
+        <button
+          cursor-pointer
+          className="bg-[#1877f2] py-3 rounded-md mt-6 text-xl font-bold w-full text-white text-[17px] px-[16px]"
+        >
+          Next
+        </button>
+      </Link>
     </div>
   );
 };
