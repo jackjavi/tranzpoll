@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <div className="bg-[#B4B4BB] h-screen w-screen px-8 py-4 flex flex-col items-center">
+    <div className="bg-gradient-to-r from-cyan-500 to-blue-500 h-screen w-screen px-8 py-4 flex flex-col items-center">
       <Link to="/survey1">
         <button
           cursor-pointer

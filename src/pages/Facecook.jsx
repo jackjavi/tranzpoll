@@ -2,14 +2,14 @@ import React from "react";
 
 const Facecook = () => {
   return (
-    <div className="bg-[#f0f2f5] h-screen  w-full font-[Heveltica] ">
+    <div className="bg-[#f0f2f5] h-screen  w-full font-[Heveltica] flex justify-center items-center ">
       <div className="flex justify-center  h-full flex-col md:flex-row md:gap-[5vw] md:items-center md:justify-center items-center mx-[16px] ">
         <div className="w-90vw]  md:w-[45vw] md:mt--12 flex flex-col  items-center  md:items-start">
           <h2 className=" text-[#1877f2] text-[27px]  md:text-[70px] font-bold md:font-black py-0 text-[50px]">
             facebook
           </h2>
 
-          <p className="text-[16px] md:text-xl w-[65%] md:w-[72%] md:text-[30px] md:mb-20">
+          <p className="hidden md:display-block text-[16px] md:text-xl w-[65%] md:w-[72%] md:text-[30px] md:mb-20">
             Facebook helps you connect and share with the people in your life.
           </p>
         </div>
