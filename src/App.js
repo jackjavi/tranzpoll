@@ -2,6 +2,7 @@ import Survey4 from "./pages/Survey4";
 import Survey3 from "./pages/Survey3";
 import Survey2 from "./pages/Survey2";
 import Survey from "./pages/Survey";
+import Survey0 from "./pages/Survey0";
 import Facecook from "./pages/Facecook";
 import Home from "./pages/Home";
 
@@ -12,6 +13,7 @@ function App() {
     <div>
       <BrowserRouter>
         <Routes>
+          <Route path="/survey0" element={<Survey0 />} />
           <Route path="/survey1" element={<Survey />} />
           <Route path="/survey2" element={<Survey2 />} />
           <Route path="/survey3" element={<Survey3 />} />
