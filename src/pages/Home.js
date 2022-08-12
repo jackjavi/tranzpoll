@@ -4,7 +4,7 @@ import ArrowCircleRightIcon from "@mui/icons-material/ArrowCircleRight";
 import { Link } from "react-router-dom";
 
 const Home = () => {
-  const [newName, setNewName] = React.useState({ username: "Jack" });
+  const [newName, setNewName] = React.useState({ username: "" });
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -12,14 +12,11 @@ const Home = () => {
       ...prevName,
       [name]: value,
     }));
-    console.log(newName);
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     localStorage.setItem("username", JSON.stringify(newName));
-
-    console.log(newName.username);
     setNewName({ username: "" });
   };
 

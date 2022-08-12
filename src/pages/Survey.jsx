@@ -7,14 +7,6 @@ const survey = () => {
     <>
       <NavBar />
       <div className=" h-screen w-screen bg-gradient-to-r from-cyan-500 to-blue-500 px-8 pt-20 flex flex-col items-center justify-center">
-        <div className="flex flex-col bg-[#1877f2] p-4 rounded-lg w-[100%]">
-          <label className="text-[whitesmoke]">What is your name?</label>
-          <input
-            type="text"
-            className=" rounded outline-none shadow border px-2 py-1"
-          />
-        </div>
-
         <div className="bg-[#1877f2] p-4 rounded-lg w-[100%] mt-2">
           <p className="text-[whitesmoke]">
             Choose your favorite social media platform?
