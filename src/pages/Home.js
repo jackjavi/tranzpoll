@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   const [newName, setNewName] = React.useState({ username: "" });
+  const [count, setCount] = React.useState(50);
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -18,6 +19,11 @@ const Home = () => {
     e.preventDefault();
     localStorage.setItem("username", JSON.stringify(newName));
     setNewName({ username: "" });
+  };
+
+  const handleCount = () => {
+    setCount(count + 1);
+    console.log(count);
   };
 
   return (
@@ -46,7 +52,7 @@ const Home = () => {
           </button>
         </form>
         <Link to="survey0">
-          <button>
+          <button onClick={handleCount}>
             <ArrowCircleRightIcon
               sx={{ fontSize: 40 }}
               className="mt-8 text-white"

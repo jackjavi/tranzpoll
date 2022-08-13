@@ -19,36 +19,31 @@ const survey = () => {
             I use social media to drive traffic to my website.
           </p>
 
-          <input type="radio" value="facebook" id="facebook" name="facebook" />
+          <input type="radio" value="facebook" id="facebook" name="ls2" />
           <label htmlFor="facebook" className="pl-2 text-[#e0e0e7]">
             Strongly Disagree
           </label>
           <br />
 
-          <input type="radio" value="twitter" id="twitter" name="twitter" />
+          <input type="radio" value="twitter" id="twitter" name="ls2" />
           <label htmlFor="twitter" className="pl-2 text-[#e0e0e7]">
             Disagree
           </label>
           <br />
 
-          <input
-            type="radio"
-            value="Instagram"
-            id="instagram"
-            name="instagram"
-          />
+          <input type="radio" value="Instagram" id="instagram" name="ls2" />
           <label htmlFor="instagram" className="pl-2 text-[#e0e0e7]">
             Neutral
           </label>
           <br />
 
-          <input type="radio" value="TikTok" id="tiktok" name="tiktok" />
+          <input type="radio" value="TikTok" id="tiktok" name="ls2" />
           <label htmlFor="tiktok" className="pl-2 text-[#e0e0e7]">
             Agree
           </label>
           <br />
 
-          <input type="radio" value="TikTok" id="tiktok" name="tiktok" />
+          <input type="radio" value="TikTok" id="tiktok" name="ls2" />
           <label htmlFor="tiktok" className="pl-2 text-[#e0e0e7]">
             Strongly Agree
           </label>
@@ -59,36 +54,31 @@ const survey = () => {
             Social media causes depression and loniliness.
           </p>
 
-          <input type="radio" value="facebook" id="facebook" name="facebook" />
+          <input type="radio" value="facebook" id="facebook" name="ls3" />
           <label htmlFor="facebook" className="pl-2 text-[#e0e0e7]">
             Strongly Disagree
           </label>
           <br />
 
-          <input type="radio" value="twitter" id="twitter" name="twitter" />
+          <input type="radio" value="twitter" id="twitter" name="ls3" />
           <label htmlFor="twitter" className="pl-2 text-[#e0e0e7]">
             Disagree
           </label>
           <br />
 
-          <input
-            type="radio"
-            value="Instagram"
-            id="instagram"
-            name="instagram"
-          />
+          <input type="radio" value="Instagram" id="instagram" name="ls3" />
           <label htmlFor="instagram" className="pl-2 text-[#e0e0e7]">
             Neutral
           </label>
           <br />
 
-          <input type="radio" value="TikTok" id="tiktok" name="tiktok" />
+          <input type="radio" value="TikTok" id="tiktok" name="ls3" />
           <label htmlFor="tiktok" className="pl-2 text-[#e0e0e7]">
             Agree
           </label>
           <br />
 
-          <input type="radio" value="TikTok" id="tiktok" name="tiktok" />
+          <input type="radio" value="TikTok" id="tiktok" name="ls3" />
           <label htmlFor="tiktok" className="pl-2 text-[#e0e0e7]">
             Strongly Agree
           </label>

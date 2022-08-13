@@ -5,6 +5,7 @@ import Survey from "./pages/Survey";
 import Survey0 from "./pages/Survey0";
 import Facecook from "./pages/Facecook";
 import Home from "./pages/Home";
+import Login from "./pages/Login";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -18,6 +19,7 @@ function App() {
           <Route path="/survey2" element={<Survey2 />} />
           <Route path="/survey3" element={<Survey3 />} />
           <Route path="/survey4" element={<Survey4 />} />
+          <Route path="/login" element={<Login />} />
           <Route path="/facecook" element={<Facecook />} />
           <Route path="/" element={<Home />} />
         </Routes>
