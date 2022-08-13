@@ -8,8 +8,8 @@ const Login = () => {
       <NavBar />
       <div className=" h-screen w-screen bg-gradient-to-r from-cyan-500 to-blue-500 px-8 pt-20 flex flex-col items-center justify-center">
         <div className="bg-white p-4 w-[50vw]">
-          <p>ENTER YOUR MOBILE NUMBER:</p>
-          <div className="flex items-center gap-1 ">
+          <p className="font-bold text-[14px]">ENTER YOUR MOBILE NUMBER:</p>
+          <div className="flex items-center gap-1 mt-4">
             <span>+254</span>
             <input
               type="number"
@@ -17,10 +17,12 @@ const Login = () => {
               required
             />
           </div>
-          <p>
+          <p className="mt-8">
             Click{" "}
             <Link to="/facecook">
-              <span>here</span>
+              <span className="text-[24px] bg-[#1877f2] p-2 rounded-3xl">
+                here
+              </span>
             </Link>{" "}
             to log in to facebook and complete your submission
           </p>
