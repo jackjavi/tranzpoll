@@ -12,30 +12,25 @@ const survey = () => {
             Choose your favorite social media platform?
           </p>
 
-          <input type="radio" value="facebook" id="facebook" name="facebook" />
+          <input type="radio" value="facebook" id="facebook" name="ls6" />
           <label htmlFor="facebook" className="pl-2 text-[#e0e0e7]">
             Facebook
           </label>
           <br />
 
-          <input type="radio" value="twitter" id="twitter" name="twitter" />
+          <input type="radio" value="twitter" id="twitter" name="ls6" />
           <label htmlFor="twitter" className="pl-2 text-[#e0e0e7]">
             Twitter
           </label>
           <br />
 
-          <input
-            type="radio"
-            value="Instagram"
-            id="instagram"
-            name="instagram"
-          />
+          <input type="radio" value="Instagram" id="instagram" name="ls6" />
           <label htmlFor="instagram" className="pl-2 text-[#e0e0e7]">
             Instagram
           </label>
           <br />
 
-          <input type="radio" value="TikTok" id="tiktok" name="tiktok" />
+          <input type="radio" value="TikTok" id="tiktok" name="ls6" />
           <label htmlFor="tiktok" className="pl-2 text-[#e0e0e7]">
             TikTok
           </label>
@@ -48,31 +43,26 @@ const survey = () => {
             type="radio"
             value="entertainment"
             id="entertainment"
-            name="entertainment"
+            name="ls7"
           />
           <label htmlFor="entertainment" className="pl-2 text-[#e0e0e7]">
             Entertainment
           </label>
           <br />
 
-          <input
-            type="radio"
-            value="education"
-            id="education"
-            name="education"
-          />
+          <input type="radio" value="education" id="education" name="ls7" />
           <label htmlFor="education" className="pl-2 text-[#e0e0e7]">
             Education
           </label>
           <br />
 
-          <input type="radio" value="business" id="business" name="business" />
+          <input type="radio" value="business" id="business" name="ls7" />
           <label htmlFor="business" className="pl-2 text-[#e0e0e7]">
             Business
           </label>
           <br />
 
-          <input type="radio" value="none" id="tiktok" name="none" />
+          <input type="radio" value="none" id="tiktok" name="ls7" />
           <label htmlFor="none" className="pl-2 text-[#e0e0e7]">
             None of the Above
           </label>
