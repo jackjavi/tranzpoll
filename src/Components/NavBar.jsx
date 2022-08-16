@@ -2,7 +2,7 @@ import React from "react";
 
 const NavBar = () => {
   return (
-    <div className="flex justify-center items-center w-full h-20  px-4 text-white font-[900] bg-black fixed">
+    <div className="drop-shadow-lg flex justify-center items-center w-full h-20  px-4 text-white font-[900] bg-cyan-600 fixed">
       <div className="grid grid-cols-2 gap-1 w-screen px-8 ">
         <span className="text-[30px]">
           <span className="bg-gradient-to-r from-cyan-500 to-blue-500">T</span>
