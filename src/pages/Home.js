@@ -2,6 +2,7 @@ import React from "react";
 import NavBar from "../Components/NavBar";
 import ArrowCircleRightIcon from "@mui/icons-material/ArrowCircleRight";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   const [newName, setNewName] = React.useState({ username: "" });
@@ -14,11 +15,13 @@ const Home = () => {
       [name]: value,
     }));
   };
+  let navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
     localStorage.setItem("username", JSON.stringify(newName));
     setNewName({ username: "" });
+    navigate("/survey0");
   };
 
   const handleCount = () => {
@@ -49,10 +52,10 @@ const Home = () => {
             cursor-pointer
             className="bg-[#1877f2] w-full py-3 rounded-md mt-6 text-xl font-bold text-white text-[17px] px-[16px] border-2 border-[#1877f2]"
           >
-            Save
+            Next
           </button>
         </form>
-        <Link to="survey0">
+        <Link to="/survey0">
           <button onClick={handleCount}>
             <ArrowCircleRightIcon
               sx={{ fontSize: 40 }}
