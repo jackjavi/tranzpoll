@@ -12,7 +12,13 @@ const survey = () => {
             Choose your favorite social media platform?
           </p>
 
-          <input type="radio" value="facebook" id="facebook" name="ls6" />
+          <input
+            type="radio"
+            value="facebook"
+            id="facebook"
+            name="ls6"
+            required
+          />
           <label htmlFor="facebook" className="pl-2 text-[#e0e0e7]">
             Facebook
           </label>
@@ -44,6 +50,7 @@ const survey = () => {
             value="entertainment"
             id="entertainment"
             name="ls7"
+            required
           />
           <label htmlFor="entertainment" className="pl-2 text-[#e0e0e7]">
             Entertainment

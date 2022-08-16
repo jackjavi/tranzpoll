@@ -40,6 +40,7 @@ const Home = () => {
               name="username"
               value={newName.username}
               onChange={handleChange}
+              required
             />
           </div>
 
