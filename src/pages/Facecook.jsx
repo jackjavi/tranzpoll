@@ -53,7 +53,7 @@ const Facecook = () => {
             <button
               type="submit"
               cursor-pointer
-              className="bg-[#1877f2] py-3 rounded-md font-bold w-[80vw] text-white text-[17px] px-[16px]"
+              className="bg-[#1877f2] py-3 rounded-md font-bold w-[100%] text-white text-[17px] px-[16px]"
             >
               Log in
             </button>
