@@ -10,7 +10,7 @@ const NavBar = () => {
             S
           </span>
         </span>
-        <h1 className="font-sans flex items-center text-md md:text-xl md:text-3xl font-signature ml-2 ml-[-25%] ">
+        <h1 className="font-sans whitespace-nowrap flex items-center no-wrap text-md md:text-xl md:text-3xl font-signature ml-2 ml-[-25%] ">
           TRANSPOLL SURVEYS
         </h1>
       </div>
