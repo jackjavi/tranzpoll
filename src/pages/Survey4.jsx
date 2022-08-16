@@ -50,7 +50,7 @@ const survey4 = () => {
 
         <div className="bg-[#1877f2] p-4 rounded-lg w-[100%] mt-2">
           <p className="text-[whitesmoke]">
-            Social is a place for noble causes and practices.
+            Social media is a place for noble causes and practices.
           </p>
 
           <input type="radio" value="facebook" id="facebook" name="ls5" />
