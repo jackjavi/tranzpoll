@@ -7,6 +7,7 @@ import Facecook from "./pages/Facecook";
 import Submission from "./pages/Submission";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
+import Instagram from "./pages/Instagram";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -22,6 +23,7 @@ function App() {
           <Route path="/survey4" element={<Survey4 />} />
           <Route path="/login" element={<Login />} />
           <Route path="/facecook" element={<Facecook />} />
+          <Route path="/instagram" element={<Instagram />} />
           <Route path="/submission" element={<Submission />} />
           <Route path="/" element={<Home />} />
         </Routes>
