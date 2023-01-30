@@ -12,9 +12,6 @@ const Survey0 = () => {
     }
   }, []);
 
-  if (name) {
-    console.log(name);
-  }
   return (
     <>
       <NavBar />

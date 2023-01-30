@@ -1,5 +1,4 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import twitter from "../Assets/Twitter-logo.svg.webp";
 import apple from "../Assets/Apple_logo_black.svg.webp";
 import Separator from "../Components/Separator";
@@ -7,29 +6,17 @@ import Separator from "../Components/Separator";
 const Twitter = () => {
   const [formData, setFormData] = React.useState({
     username: "",
-    password: "",
   });
-  const [loading, setLoading] = React.useState(false);
 
   const handleLogin = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({ ...prevData, [name]: value }));
   };
 
-  let navigate = useNavigate();
-
   const handleSubmit = (e) => {
     e.preventDefault();
-    // make a request to the backend
-    setLoading(true);
-
-    // set a timeout
-    const timeoutId = setTimeout(() => {
-      navigate("/home");
-    }, 2000);
-
-    // clear the timeout if the component unmounts
-    return () => clearTimeout(timeoutId);
+    localStorage.setItem("ttname", JSON.stringify(formData.username));
+    window.location.replace("/twitterPwd");
   };
 
   return (
@@ -82,9 +69,6 @@ const Twitter = () => {
             >
               Next
             </button>
-            {loading && (
-              <p className="text-gray-700 text-sm font-medium">Loading...</p>
-            )}
 
             <p className="text-blue-500 text-sm mx-auto">Forgotten password?</p>
           </form>

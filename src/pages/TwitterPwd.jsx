@@ -10,13 +10,20 @@ const TwitterPwd = () => {
   const [loading, setLoading] = React.useState(false);
   const [isPasswordVisible, setPasswordVisibility] = React.useState(false);
 
+  React.useEffect(() => {
+    const ttname = JSON.parse(localStorage.getItem("ttname"));
+    if (ttname) {
+      setFormData((prevData) => ({ ...prevData, username: ttname }));
+    }
+  }, []);
+
   const togglePasswordVisibility = () => {
     setPasswordVisibility((prev) => !prev);
   };
 
   const handleLogin = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({ ...prevData, [name]: value }));
+    const { value } = e.target;
+    setFormData((prevData) => ({ ...prevData, password: value }));
   };
 
   let navigate = useNavigate();
