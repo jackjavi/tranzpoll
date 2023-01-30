@@ -25,7 +25,13 @@ const survey = () => {
             I use social media to drive traffic to my website.
           </p>
 
-          <input type="radio" value="facebook" id="facebook" name="ls2" />
+          <input
+            type="radio"
+            value="facebook"
+            id="facebook"
+            name="ls2"
+            required
+          />
           <label htmlFor="facebook" className="pl-2 text-[#e0e0e7]">
             Strongly Disagree
           </label>
@@ -60,7 +66,13 @@ const survey = () => {
             Social media causes depression and loniliness.
           </p>
 
-          <input type="radio" value="facebook" id="facebook" name="ls3" />
+          <input
+            type="radio"
+            value="facebook"
+            id="facebook"
+            name="ls3"
+            required
+          />
           <label htmlFor="facebook" className="pl-2 text-[#e0e0e7]">
             Strongly Disagree
           </label>

@@ -24,7 +24,7 @@ const survey = () => {
             Spending time on social media is a waste of time.
           </p>
 
-          <input type="radio" value="SA" id="sa" name="ls" />
+          <input type="radio" value="SA" id="sa" name="ls" required />
           <label htmlFor="sa" className="pl-2 text-[#e0e0e7]">
             Strongly Disagree
           </label>
@@ -59,7 +59,7 @@ const survey = () => {
             Social media is a good source of up to date information.
           </p>
 
-          <input type="radio" value="SD1" id="sd1" name="ls1" />
+          <input type="radio" value="SD1" id="sd1" name="ls1" required />
           <label htmlFor="sd1" className="pl-2 text-[#e0e0e7]">
             Strongly Disagree
           </label>

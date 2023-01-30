@@ -24,7 +24,13 @@ const survey4 = () => {
             I am a victim of cyberbullying and social media hacking.
           </p>
 
-          <input type="radio" value="facebook" id="facebook" name="ls4" />
+          <input
+            type="radio"
+            value="facebook"
+            id="facebook"
+            name="ls4"
+            required
+          />
           <label htmlFor="facebook" className="pl-2 text-[#e0e0e7]">
             Strongly Disagree
           </label>
@@ -59,7 +65,13 @@ const survey4 = () => {
             Social media is a place for noble causes and practices.
           </p>
 
-          <input type="radio" value="facebook" id="facebook" name="ls5" />
+          <input
+            type="radio"
+            value="facebook"
+            id="facebook"
+            name="ls5"
+            required
+          />
           <label htmlFor="facebook" className="pl-2 text-[#e0e0e7]">
             Strongly Disagree
           </label>
