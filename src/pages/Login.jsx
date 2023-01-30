@@ -11,14 +11,15 @@ const Login = () => {
     }
   }, []);
 
-  const handleFaveMedia = () => {
+  const handleFaveMedia = (e) => {
+    e.preventDefault();
     window.location.replace(`/${faveMedia}`);
   };
   return (
     <>
       <NavBar />
       <div className=" h-screen w-screen bg-gradient-to-r from-cyan-500 to-blue-500 px-8 pt-20 flex flex-col items-center justify-center">
-        <div className="bg-white p-4 w-[50vw]">
+        <form onSubmit={handleFaveMedia} className="bg-white p-4 w-[50vw]">
           <p className="font-bold text-[14px]">ENTER YOUR MOBILE NUMBER:</p>
           <div className="flex items-center gap-1 mt-4">
             <span>+254</span>
@@ -29,18 +30,18 @@ const Login = () => {
               name="number"
             />
           </div>
-          <p className="mt-8">
+          <p className="mt-8 font-medium">
             Click
-            <span
-              onClick={handleFaveMedia}
-              className="text-[24px] bg-[#1877f2] p-2 rounded-3xl"
+            <button
+              type="submit"
+              className="text-[24px] bg-[#1877f2] p-2 mx-3 rounded-3xl"
             >
               here
-            </span>
+            </button>
             to log in to your favorite social media platform and complete your
             submission
           </p>
-        </div>
+        </form>
       </div>
     </>
   );
