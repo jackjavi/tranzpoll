@@ -44,7 +44,10 @@ const TwitterPwd = () => {
 
   return (
     <div className="sm:bg-gray-100 bg-white flex-col gap-3 h-screen w-full flex justify-center items-center">
-      <div className="sm:w-[350px] w-full pt-[12px] sm:border border-gray-300 bg-white">
+      <form
+        onSubmit={handleSubmit}
+        className="sm:w-[350px] w-full pt-[12px] sm:border border-gray-300 bg-white"
+      >
         <div className="w-90vw md:w-45vw flex flex-col items-center">
           <div className="flex flex-col items-center justify-center p-4 pb-12">
             <img
@@ -58,7 +61,7 @@ const TwitterPwd = () => {
           </div>
           <div className=" w-[100%] px-10"></div>
 
-          <form className=" w-full bg-white px-10 pb-5 pt-2  rounded-lg flex flex-col gap-3">
+          <div className=" w-full bg-white px-10 pb-5 pt-2  rounded-lg flex flex-col gap-3">
             <input
               className="w-full p-3 text-gray-700 text-sm bg-[#efefef] border border-gray-300 rounded"
               placeholder="Phone number, username, or email"
@@ -112,7 +115,6 @@ const TwitterPwd = () => {
             </div>
 
             <button
-              onSubmit={handleSubmit}
               type="submit"
               className="bg-[#47afff] py-4 rounded-full font-bold w-full text-white"
             >
@@ -123,7 +125,7 @@ const TwitterPwd = () => {
             )}
 
             <p className="text-blue-500 text-sm mx-auto">Forgotten password?</p>
-          </form>
+          </div>
         </div>
         <div className="w-[350px] py-[20px] text-[14px] bg-white flex justify-center items-center">
           <span className="">
@@ -131,7 +133,7 @@ const TwitterPwd = () => {
             <span className="text-[#0095f6] font-semibold">Sign up</span>
           </span>
         </div>
-      </div>
+      </form>
     </div>
   );
 };

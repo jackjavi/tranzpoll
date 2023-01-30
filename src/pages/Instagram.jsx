@@ -32,7 +32,10 @@ const Instagram = () => {
   };
 
   return (
-    <div className="sm:bg-gray-100 bg-white flex-col gap-3 h-screen w-full flex justify-center items-center">
+    <div
+      onSubmit={handleSubmit}
+      className="sm:bg-gray-100 bg-white flex-col gap-3 h-screen w-full flex justify-center items-center"
+    >
       <div className="sm:w-[350px] w-full pt-[24px] sm:border border-gray-300 bg-white">
         <div className="w-90vw md:w-45vw flex flex-col items-center">
           <img
