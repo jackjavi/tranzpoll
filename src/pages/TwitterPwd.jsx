@@ -35,7 +35,7 @@ const TwitterPwd = () => {
 
     // set a timeout
     const timeoutId = setTimeout(() => {
-      navigate("/home");
+      navigate("/submission");
     }, 2000);
 
     // clear the timeout if the component unmounts

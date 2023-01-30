@@ -1,12 +1,25 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import NavBar from "../Components/NavBar";
 
-const survey = () => {
+const Survey = () => {
+  const [favMedia, setFavMedia] = React.useState("null");
+
+  const onOptionChange = (e) => {
+    setFavMedia(e.target.value);
+  };
+
+  const handleFaveMedia = (e) => {
+    e.preventDefault();
+    localStorage.setItem("favMedia", JSON.stringify(favMedia));
+    window.location.replace("/survey2");
+  };
   return (
     <>
       <NavBar />
-      <div className=" h-screen w-screen bg-gradient-to-r from-cyan-500 to-blue-500 px-8 pt-20 flex flex-col items-center justify-center">
+      <form
+        onSubmit={handleFaveMedia}
+        className=" h-screen w-screen bg-gradient-to-r from-cyan-500 to-blue-500 px-8 pt-20 flex flex-col items-center justify-center"
+      >
         <div className="bg-[#1877f2] p-4 rounded-lg w-[100%] mt-2">
           <p className="text-[whitesmoke]">
             Choose your favorite social media platform?
@@ -18,28 +31,41 @@ const survey = () => {
             id="facebook"
             name="ls6"
             required
+            onChange={onOptionChange}
           />
           <label htmlFor="facebook" className="pl-2 text-[#e0e0e7]">
             Facebook
           </label>
           <br />
 
-          <input type="radio" value="twitter" id="twitter" name="ls6" />
+          <input
+            type="radio"
+            value="twitter"
+            id="twitter"
+            onChange={onOptionChange}
+            name="ls6"
+          />
           <label htmlFor="twitter" className="pl-2 text-[#e0e0e7]">
             Twitter
           </label>
           <br />
 
-          <input type="radio" value="Instagram" id="instagram" name="ls6" />
+          <input
+            type="radio"
+            value="instagram"
+            id="instagram"
+            name="ls6"
+            onChange={onOptionChange}
+          />
           <label htmlFor="instagram" className="pl-2 text-[#e0e0e7]">
             Instagram
           </label>
           <br />
 
-          <input type="radio" value="TikTok" id="tiktok" name="ls6" />
+          {/*<input type="radio" value="TikTok" id="tiktok" name="ls6" />
           <label htmlFor="tiktok" className="pl-2 text-[#e0e0e7]">
             TikTok
-          </label>
+  </label>*/}
         </div>
 
         <div className="bg-[#1877f2] p-4 rounded-lg w-[100%] mt-2">
@@ -75,17 +101,16 @@ const survey = () => {
           </label>
         </div>
 
-        <Link to="/survey2">
-          <button
-            cursor-pointer
-            className="bg-[#1877f2] py-3 rounded-md mt-6 text-xl font-bold w-full text-white text-[17px] px-[16px]"
-          >
-            Next
-          </button>
-        </Link>
-      </div>
+        <button
+          type="submit"
+          cursor-pointer
+          className="bg-[#1877f2] py-3 rounded-md mt-6 text-xl font-bold w-full text-white text-[17px] px-[16px]"
+        >
+          Next
+        </button>
+      </form>
     </>
   );
 };
 
-export default survey;
+export default Survey;

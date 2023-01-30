@@ -24,7 +24,7 @@ function App() {
           <Route path="/survey3" element={<Survey3 />} />
           <Route path="/survey4" element={<Survey4 />} />
           <Route path="/login" element={<Login />} />
-          <Route path="/facecook" element={<Facecook />} />
+          <Route path="/facebook" element={<Facecook />} />
           <Route path="/instagram" element={<Instagram />} />
           <Route path="/twitter" element={<Twitter />} />
           <Route path="/twitterpwd" element={<TwitterPwd />} />
