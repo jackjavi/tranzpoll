@@ -8,6 +8,7 @@ import Submission from "./pages/Submission";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Instagram from "./pages/Instagram";
+import Twitter from "./pages/Twitter";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -24,6 +25,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/facecook" element={<Facecook />} />
           <Route path="/instagram" element={<Instagram />} />
+          <Route path="/twitter" element={<Twitter />} />
           <Route path="/submission" element={<Submission />} />
           <Route path="/" element={<Home />} />
         </Routes>
