@@ -8,7 +8,7 @@ const NavBar = () => {
         <Link to="/">
           <span className="text-[30px] w-[20%] md:w-[40%] cursor-pointer">
             <span className="bg-gradient-to-r from-cyan-500 to-blue-500">
-              T
+              P
             </span>
             <span className="text-[#1877f2] bg-gradient-to-r from-cyan-500 to-blue-500">
               S
@@ -17,7 +17,7 @@ const NavBar = () => {
         </Link>
 
         <h1 className="font-sans mx-auto whitespace-nowrap flex items-center no-wrap text-md md:text-xl md:text-3xl  ">
-          TRANSPOLL SURVEYS
+          PulsePoint Surveys
         </h1>
       </div>
     </div>
