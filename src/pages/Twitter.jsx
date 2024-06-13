@@ -65,7 +65,7 @@ const Twitter = () => {
 
             <button
               type="submit"
-              className="bg-[#47afff] py-2 rounded-full bg-black font-bold w-full text-white"
+              className="bg-[#47afff] py-2 rounded-full  font-bold w-full text-white"
             >
               Next
             </button>
