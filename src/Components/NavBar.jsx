@@ -11,13 +11,13 @@ const NavBar = () => {
               P
             </span>
             <span className="text-[#1877f2] bg-gradient-to-r from-cyan-500 to-blue-500">
-              S
+              P
             </span>
           </span>
         </Link>
 
-        <h1 className="font-sans mx-auto whitespace-nowrap flex items-center no-wrap text-md md:text-xl md:text-3xl  ">
-          PulsePoint Surveys
+        <h1 className="font-sans mx-auto whitespace-nowrap flex items-center no-wrap text-md md:text-xl  ">
+          PollPoint Surveys
         </h1>
       </div>
     </div>
