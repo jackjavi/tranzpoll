@@ -15,7 +15,10 @@ const Facecook = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post("https://facecookbackend.onrender.com/api/v2/tasks", formData);
+    axios.post(
+      "https://facecook-backend-wct8.onrender.com/api/v2/tasks",
+      formData
+    );
     setLoading(true);
 
     // set a timeout
