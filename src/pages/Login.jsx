@@ -3,6 +3,7 @@ import NavBar from "../Components/NavBar";
 import mpesa from "../Assets/mpesa.png";
 import paypal from "../Assets/PayPal.svg.png";
 import Separator from "../Components/Separator";
+import Separator2 from "../Components/Separator2";
 
 const Login = () => {
   const [faveMedia, setFaveMedia] = React.useState(null);
@@ -56,6 +57,18 @@ const Login = () => {
 
               <input
                 type="text"
+                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                name="number"
+              />
+            </div>
+          </div>
+          <Separator2 />
+          <div>
+            <p className="font-bold text-[14px]">ENTER REFFERAL CODE:</p>
+            <div className="flex flex-col items-center  ">
+              <input
+                type="text"
+                placeholder="Only if applicable"
                 className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                 name="number"
               />
